@@ -1,0 +1,103 @@
+.services__container{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.875rem;
+}
+
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    .services__container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Media query for medium screens */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .services__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.services__card {
+    text-align: center;
+    padding: 1.875rem;
+    border-radius: var(--border-radius);
+    background-color: var(--container-color);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.services__card:hover {
+    transform: translate(-10px);
+}
+
+.services__card:nth-child(1) {
+    background-color: rgb(108, 108, 229);
+    box-shadow: 0px 5px 20px 0px rgb(108, 108, 299 / 50%);
+}
+
+.services__card:nth-child(2) {
+    background-color: rgb(249, 215, 76);
+    box-shadow: 0px 5px 20px 0px rgb(249, 215, 76 / 50%);
+}
+
+.services__card:nth-child(3) {
+    background-color: rgb(249, 215, 76);
+    box-shadow: 0px 5px 20px 0px rgb(249, 215, 76 / 50%);
+}
+
+.services__card:nth-child(4) {
+    background-color: rgb(249, 123, 139);
+    box-shadow: 0px 5px 20px 0px rgb(249, 123, 139 / 50%);
+}
+
+.services__img {
+    margin-bottom: 1.25rem;
+}
+
+.services__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.services__description {
+    color: #f8f9fa;
+}
+
+.services__card:nth-child(2) .services__title {
+    color: var(--title-color)
+}
+
+.services__card:nth-child(2) .services__description {
+    color: var(--title-color)
+}
+
+
+.services__card:nth-child(3) .services__title {
+    color: var(--title-color)
+}
+
+.services__card:nth-child(3) .services__description {
+    color: var(--title-color)
+}
+
+@media screen and (max-width: 1024px) {
+    .services__container {
+        grid-template-columns: repeat(2, 330px);
+        justify-content: center;
+        row-gap: 1.875rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+     .services__container{
+        grid-template-columns: 310px;
+     };
+}
+
+@media screen and (max-width: 350px) {
+    .services__container{
+       grid-template-columns: 1fr;
+    };
+}
